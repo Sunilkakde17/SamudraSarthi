@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    tools:context=".HomeActivity"
+    android:background="@drawable/bqckground">
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:elevation="4dp"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar" />
+
+    <TextView
+        android:id="@+id/cityNameText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/urbanist"
+        android:text="City"
+        android:textColor="@color/white"
+        android:textSize="36sp"
+        android:textStyle="bold" />
+
+
+
+    <TextView
+        android:id="@+id/temperatureText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:fontFamily="@font/urbanist"
+        android:text="25°"
+        android:layout_below="@+id/cityNameText"
+        android:textColor="@color/yellow"
+        android:textSize="60sp"
+        android:textStyle="bold" />
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/detailsLayout"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_below="@+id/temperatureText"
+        android:background="@drawable/background2"
+        android:padding="10dp">
+
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/humiditylayout"
+            android:layout_margin="5dp"
+            android:layout_weight="0.5"
+            android:orientation="vertical">
+
+
+            <ImageView
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:id="@+id/humidityIcon"
+                android:layout_gravity="center"
+                android:src="@drawable/humidity"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/humidityText"
+                android:text="60%"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:fontFamily="@font/urbanist"
+                android:layout_gravity="center"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Humidity"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:fontFamily="@font/urbanist"
+                android:layout_gravity="center"/>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/windlayout"
+        android:layout_margin="5dp"
+        android:layout_weight="0.5"
+        android:orientation="vertical">
+
+
+        <ImageView
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:id="@+id/windIcon"
+            android:layout_gravity="center"
+            android:src="@drawable/wind"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/windText"
+            android:text="10 km/h"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:fontFamily="@font/urbanist"
+            android:layout_gravity="center"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Wind"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:fontFamily="@font/urbanist"
+            android:layout_gravity="center"/>
+
+</LinearLayout>
+
+    </LinearLayout>
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:id="@+id/weatherIcon"
+        android:layout_below="@id/detailsLayout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:elevation="12dp"
+        android:contentDescription="Weather Icon"
+        android:src="@drawable/ic_01d"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/descriptionText"
+        android:layout_below="@id/weatherIcon"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/urbanist"
+        android:text="Sunny"
+        android:textSize="28sp"
+        android:textColor="@color/white"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/cityNameInput"
+        android:layout_below="@id/descriptionText"
+        android:textColor="@color/primarycolor4"
+        android:padding="12dp"
+        android:textColorHint="@color/primarycolor5"
+        android:gravity="center"
+        android:fontFamily="@font/urbanist"
+        android:textSize="24sp"
+        android:layout_marginTop="20dp"
+        android:hint="Enter City Name"/>
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/fetchWeatherButton"
+        android:layout_below="@id/cityNameInput"
+        android:backgroundTint="@color/primarycolor6"
+        android:fontFamily="@font/urbanist"
+        android:text="Change City "
+        android:textColor="@color/white"
+        android:textSize="20sp"/>
+
+</RelativeLayout>

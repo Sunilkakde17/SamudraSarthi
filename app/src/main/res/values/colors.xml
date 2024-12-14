@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="yellow">#fbc02d</color>
+    <color name="skyblue">#047FE1</color>
+    <color name="blue">#280492</color>
+    <color name="red">#80000000</color>
+    <color name="primarycolor">#031059</color>
+    <color name="primarycolor1">#A08ED1</color>
+    <color name="primarycolor2">#B37199</color>
+    <color name="primarycolor3">#663E1E58</color>
+    <color name="primarycolor4">#EFEFEF</color>
+    <color name="primarycolor5">#BFBFBF</color>
+    <color name="primarycolor6">#2B3A67</color>
+    <!-- Primary color used throughout the app -->
+    <color name="colorPrimary">#3F51B5</color> <!-- You can change this value to your preferred color -->
+    <color name="colorPrimaryDark">#303F9F</color> <!-- Darker shade of primary color -->
+    <color name="colorAccent">#FF4081</color>
+</resources>

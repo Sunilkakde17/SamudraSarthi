@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <ImageView
+            android:id="@+id/beach_image"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:scaleType="centerCrop" />
+
+        <TextView
+            android:id="@+id/beach_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:paddingTop="16dp" />
+
+        <TextView
+            android:id="@+id/beach_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="8dp" />
+
+        <!-- Weather Information -->
+        <TextView
+            android:id="@+id/weather_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:paddingTop="16dp"
+            android:text="Weather: Loading..." />
+
+        <!-- Activity Suggestions -->
+        <TextView
+            android:id="@+id/activity_suggestions"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:paddingTop="16dp"
+            android:text="Suggested Activities: Surfing, Snorkeling, Beach Yoga" />
+
+        <!-- Beach Amenities -->
+        <TextView
+            android:id="@+id/amenities"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:paddingTop="16dp"
+            android:text="Amenities: Parking, Food Stalls, Restrooms, Lifeguard" />
+
+        <!-- Environmental Alerts -->
+        <TextView
+            android:id="@+id/environmental_alerts"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:paddingTop="16dp"
+            android:text="Environmental Alerts: Tide Timings, Jellyfish Presence" />
+
+        <!-- Nearby Places -->
+        <TextView
+            android:id="@+id/nearby_places"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:paddingTop="16dp"
+            android:text="Nearby Attractions: Restaurants, Hotels" />
+
+        <!-- Rating and Location Button -->
+        <RatingBar
+            android:id="@+id/beach_rating"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:numStars="5"
+            android:stepSize="0.5"
+            android:rating="0" />
+
+        <TextView
+            android:id="@+id/feedback_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:textSize="16sp"
+            android:textColor="@android:color/black" />
+
+        <Button
+            android:id="@+id/location_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Open Location in Maps"
+            android:paddingTop="16dp" />
+    </LinearLayout>
+</ScrollView>
